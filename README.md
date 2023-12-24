@@ -2,17 +2,22 @@
 BlockEstate is a revolutionary real estate transaction platform built on the Hyperledger blockchain framework. It leverages blockchain technology to enhance the efficiency, security, and transparency of property transactions. The platform employs a unique chaincode for property ownership management and a novel pay order mechanism.
 
 ## Key Features
-- **Decentralized Ledger**: Utilizes Hyperledger to create an immutable and transparent record of property transactions.
-- **Chaincode for Property Management**: Custom chaincode to manage property ownership and transaction processes.
-- **Pay Order Mechanism**: A secure and transparent system for handling financial transactions within the real estate sector.
-- **Privacy and Security**: Ensures that sensitive data is encrypted and only accessible to authorized parties.
+The smart contract (in folder `chaincode-go`) implements the following functions to support the application:
 
-## File And Folders Structure 
-There are following olders in this repository.
---Main
-  |-- Readme.md
-  |-- Overleaf
-     |-- 
+- CreateAsset
+- ChangePublicDescription
+- AgreeToSell
+- AgreeToBuy
+- VerifyAssetProperties
+- TransferAsset
+- ReadAsset
+- GetAssetPrivateProperties
+- GetAssetSalesPrice
+- GetAssetBidPrice
+- GetAssetHashId
+- QueryAssetSaleAgreements
+- QueryAssetBuyAgreements
+- QueryAssetHistory
 
 ### Usage
 To deploy the chaincode on a Hyperledger network, follow the specific instructions provided in the deployment directory.
@@ -44,16 +49,21 @@ Clone the repository:
    ```bash
    git clone [[repository-url]](https://github.com/LavizaFalakNaz/HyperLedger-Fabric.git)
    ```
-Navigate to the project directory:
-Clone the repository:
-   ```bash
-   Copy code
-   cd BlockEstate
+   ``` bash
+   cd Project/test-network
    ```
-
-Install dependencies:
-   ```bash
-   Copy code
-   # Use appropriate package manager
-   npm install or go get
+   ``` bash
+   ./network.sh down
+   ```
+   ``` bash
+   ./network.sh up createChannel -c mychannel -ca
+   ```
+   ``` bash
+   ./network.sh deployCC -ccn secured -ccp ../asset-transfer-secured-agreement/chaincode-go/ -ccl go -ccep "OR('Org1MSP.peer','Org2MSP.peer')"
+   ```
+   ``` bash
+   cd ../asset-transfer-secured-agreement/application-javascript
+   ```
+   ``` bash
+   node app.js
    ```

@@ -20,12 +20,11 @@ Use the provided APIs to interact with the blockchain for property transactions.
 
 ### Contributing
 Contributions to BlockEstate are welcome. Please follow these steps to contribute:
-
-Fork the repository.
-Create a new branch (git checkout -b feature-branch).
-Make your changes and commit them (git commit -am 'Add new feature').
-Push to the branch (git push origin feature-branch).
-Create a new Pull Request.
+- Fork the repository.
+- Create a new branch (git checkout -b feature-branch).
+- Make your changes and commit them (git commit -am 'Add new feature').
+- Push to the branch (git push origin feature-branch).
+- Create a new Pull Request.
 
 ### License
 BlockEstate is licensed under the MIT License.

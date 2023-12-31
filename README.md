@@ -13,25 +13,7 @@ There are following olders in this repository.
   |-- Readme.md
   |-- Overleaf
      |-- 
-# Getting Started
-To get started with BlockEstate, follow these steps:
 
-### Prerequisites
-- Install Hyperledger Fabric
-- Install a supported programming language (Go, JavaScript)
-
-### Installation
-Clone the repository:
-   ```bash
-   git clone [[repository-url]](https://github.com/LavizaFalakNaz/HyperLedger-Fabric.git)
-
-Navigate to the project directory:
-Copy code
-cd BlockEstate
-Install dependencies:
-Copy code
-# Use appropriate package manager
-npm install or go get
 ### Usage
 To deploy the chaincode on a Hyperledger network, follow the specific instructions provided in the deployment directory.
 Use the provided APIs to interact with the blockchain for property transactions.
@@ -47,3 +29,32 @@ Create a new Pull Request.
 
 ### License
 BlockEstate is licensed under the MIT License.
+
+# Getting Started
+To get started with BlockEstate, follow these steps:
+
+### Prerequisites
+- Install Hyperledger Fabric
+- Install a supported programming language (Go, JavaScript)
+- Install Docker & Docker-Compose
+- Enable WSL (Windows Sub System for Linux) and Install Ubuntu (Skip if using Linux environment)
+- Install Curl, Python 2.7, OpenSSL, Go, Node and npm
+
+### Installation
+Clone the repository:
+   ```bash
+   git clone [[repository-url]](https://github.com/LavizaFalakNaz/HyperLedger-Fabric.git)
+   ```bash
+
+Navigate to the project directory:
+   ```bash
+   Copy code
+   cd BlockEstate
+   ```bash
+
+Install dependencies:
+   ```bash
+   Copy code
+   # Use appropriate package manager
+   npm install or go get
+   ```bash

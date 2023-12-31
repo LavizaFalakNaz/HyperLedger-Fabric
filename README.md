@@ -24,15 +24,11 @@ To get started with BlockEstate, follow these steps:
 Clone the repository:
    ```bash
    git clone [[repository-url]](https://github.com/LavizaFalakNaz/HyperLedger-Fabric.git)
-   ```bash
 
 Navigate to the project directory:
-```bash
 Copy code
 cd BlockEstate
 Install dependencies:
-```bash
-
 Copy code
 # Use appropriate package manager
 npm install or go get
